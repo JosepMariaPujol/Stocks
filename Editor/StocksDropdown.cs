@@ -91,7 +91,8 @@ namespace Softgraph.Stocks.Editor
                 {
                     JObject data = JObject.Parse(jsonResponse);
 
-                    if (float.TryParse(data["c"]?.ToString(), out float currentPrice) &&
+					if (data.ContainsKey("c") && data.ContainsKey("pc") &&
+                    	float.TryParse(data["c"]?.ToString(), out float currentPrice) &&
                         float.TryParse(data["pc"]?.ToString(), out float previousClosePrice) &&
                         previousClosePrice > 0f)
                     {
