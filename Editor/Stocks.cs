@@ -7,7 +7,7 @@ namespace Softgraph.Stocks.Editor
     {
         protected const string ApiKeyPrefKey = "Stocks.ApiKey"; 
     
-        protected static string stockPrice = "Waiting...";
+        protected static string stockPrice = "Refresh...";
         protected const string ApiUrl = "https://finnhub.io/api/v1/quote";
     
         protected static List<string> Symbols => StocksPreferences.GetSymbols();

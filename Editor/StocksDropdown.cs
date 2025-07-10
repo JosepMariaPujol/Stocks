@@ -65,7 +65,7 @@ namespace Softgraph.Stocks.Editor
             }
         }
 
-        private static IEnumerator FetchStockPrice()
+        public static IEnumerator FetchStockPrice()
         {
             if (EditorApplication.timeSinceStartup - lastUpdateTime < updateInterval && currentRequest != null)
                 yield break;
