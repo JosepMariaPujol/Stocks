@@ -90,6 +90,8 @@ namespace Softgraph.Stocks.Editor
             
                 CloseSettingsWindow();
             
+                Unity.EditorCoroutines.Editor.EditorCoroutineUtility.StartCoroutineOwnerless(StocksButton.FetchStockPrice());
+                Unity.EditorCoroutines.Editor.EditorCoroutineUtility.StartCoroutineOwnerless(StocksDropdown.FetchStockPrice());
                 Debug.Log("Saved preferences");
             }
         }
