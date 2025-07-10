@@ -1,0 +1,16 @@
+{
+  "name": "com.softgraph.stocks",
+  "version": "2.0.0",
+  "displayName": "Stocks",
+  "description": "Displays real-time stock prices in the Unity Editor toolbar. Easily configure a list of stock symbols, toggle auto-updating, and view current prices with percentage changes.",
+  "unity": "6000.3",
+  "author": "Josep M. Pujol",
+  "dependencies": {
+    "com.unity.editorcoroutines": "1.0.0"
+  },
+  "keywords": [
+    "Unity",
+    "Stock",
+    "StockPrice"
+  ]
+}
